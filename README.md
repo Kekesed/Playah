@@ -47,13 +47,16 @@ The type are now will be ignored because of we still trying to repair the Soundc
 |callback|object|{...}|The callback function|
 
 #### *header* Object
+
 The *header* object are optional.
+
 |Name|Type|Default|Detail|
 |:------|:-----:|:-------|:-----------------------|
 |height|string|'150px'|The height in CSS Value.|
 |color|string|'darkBlue'|Color background setting in Playah|
 
 #### *callback* Object
+
 The *callback* Object are actually optional.
 
 #### Method
