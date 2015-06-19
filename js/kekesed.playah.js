@@ -48,9 +48,6 @@ $.widget("kekesed.playah", {
 		}
 	},
 	_create: function() {
-		if(!(window.location.host.search("sndbox.ga") || window.location.host.search("kekesed.gq"))) {
-			console.info("This site uses Playah HTML5 Audio Player\nhttps://app.kekesed.gq/run/Playah");
-		}
 		var elemen = this.element;
 		var pict = $('<section/>', {class:'playah-picture bg-' + this.options.header.color}).css({overflow:'hidden', height: this.options.header.height});
 		var pbar = $('<section/>', {class:'playah-progressbar progress-bar no-margin bg-dark'}).progressbar({
@@ -100,7 +97,6 @@ $.widget("kekesed.playah", {
 		this.vars.kontrol.img = pict;
 		this.vars.kontrol.judul = ply_judul;
 		this.vars.kontrol.pbar = pbar;
-		$("<small/>", {class:"place-right text-muted"}).append('Playah HTML5 Audio Player').appendTo(this.element);
 		//SMART CHOOSANT Playlist:
 		if(this.options.playlist.length == 0) {
 			//None
