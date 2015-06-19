@@ -4,7 +4,7 @@ It will played smoothly as your browser play it usually.
 
 **Current Version:** 1.3.
 
-** UNFINISHED DOCUMENTATION **
+**UNFINISHED DOCUMENTATION**
 
 
 ## Playah needs jQuery!
@@ -34,4 +34,14 @@ PLAYLIST
 The type are now will be ignored because of we still trying to repair the Soundcloud integrator utility.
 
 ## Public Method:
-**Still Update**
+#### Options:
+|Name|type|Default Value|Detail|
+|:------|:-----:|:-------|:-----------------------|
+|theme|string|'Blue'|Theme color of the Playah (All color are defined in global style in MetroUI CSS Doc.|
+|autoplay|boolean|false|Auto play the playlist when ready.|
+|random|boolean|false|Shuffle the playlist before it plays.|
+|loop|boolean|true|Loop the whole playlist. Not one track.|
+|android_mode|boolean|true|When prev pessed, it wont change to previous track in playlist, it seeks to 0:00 for several conditions.|
+|playlist|object|[]|The playlist.|
+|header|object|{height: '150px', color:'darkBlue'}|The Playah have a header, wich is the image that will be loaded. This is shows at default when the img in meta of a track in playlist are undefined or null.|
+|callback|object|{...}|The callback function, **API SOON**|
