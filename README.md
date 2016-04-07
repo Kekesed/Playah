@@ -1,8 +1,8 @@
 # Playah
-A HTML5 Audio Player based on MetroUI CSS Version 2 (v3 are now on work). Basically it works for direct stream, like mp3 or ogg file on server.
+A HTML5 Audio Player based on MetroUI CSS Version 3. Basically it works for direct stream, like mp3 or ogg file on server. **NOW** we've added Soundcloud integration utility. You can add soundcloud playlist or music link directly into the playlist. You must change the type into 'soundcloud' thingy~
 It will played smoothly as your browser play it usually.
 
-**Current Version:** 1.3.
+**Current Version:** 2.0.
 
 **UNFINISHED DOCUMENTATION**
 
