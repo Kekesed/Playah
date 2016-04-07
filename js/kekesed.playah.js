@@ -1,6 +1,6 @@
 /* 
 	Playah Javascript Plugin for MetroUI
-	Requires jQuery and MetroUI Bootstrap.
+	Requires jQuery and MetroUI CSS Bootstrap.
 	
 	Copyright (c)2015 Kekesed. All rights reserved.
 	https://app.kekesed.gq/run/Playah/
@@ -56,9 +56,7 @@ $.widget("kekesed.playah", {
 			animate:false
 		});
 		var konten = $('<section/>', {class:'playah-konten bg-white padding15'});
-		
 		var kondisi = 'stop';
-		
 		// konstruk konten:
 		var ply_btn = $("<button/>", {class:"large bg-" + this.options.theme + " fg-white"});
 		var rew_btn = $("<button/>", {class:"fg-" + this.options.theme});
@@ -77,17 +75,14 @@ $.widget("kekesed.playah", {
 			rew_btn.appendTo(ply_control);
 			ply_btn.appendTo(ply_control);
 			fwd_btn.appendTo(ply_control);
-			
 			//Judulisasi
 			ply_judul.appendTo(konten);
 			// Kontrol Final
 			ply_control.appendTo(konten);
-		
 		// Finalization
 		pict.appendTo(elemen);
 		pbar.appendTo(elemen);
 		konten.appendTo(elemen);
-		
 		//Simpan ke memori
 		this.vars.btn.ply = ply_btn;
 		this.vars.btn.rew = rew_btn;
@@ -117,7 +112,6 @@ $.widget("kekesed.playah", {
 		ply_btn.click(function() {
 			Ortu._triggerplay();
 		});
-		
 		//REWIND
 		rew_btn.click(function() {
 			Ortu.pref();
@@ -298,5 +292,11 @@ $.widget("kekesed.playah", {
 			array[j] = temp;
 		}
 		return array;
+	}
+});
+// Bundle Info:
+$.fn.extend({
+	ksd_info: {
+		Playah: function() { return "1.3";},
 	}
 });
